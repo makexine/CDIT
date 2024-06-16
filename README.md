@@ -1,1 +1,1 @@
-# CDIT
+# CDIT： Context-Driven Index Trimming
