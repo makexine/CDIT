@@ -24,7 +24,7 @@ def get_ctxs_em(file_path):
 def get_llm_chatglm(evi,query):
     # your api key
     #print("llm!")
-    zhipuai.api_key = "1b63a16cb13959ca1abf3a3fededa2a2.IYPOsV0KXyuXyle7"
+    zhipuai.api_key = " "
     ins='Pretend that you are a language learning assistant. Are the following statements similar with the question? Just Say True if they are; otherwise just say False. Only output one word.'
     prompt=ins+'\n'+evi+'\n'+query
     response = zhipuai.model_api.invoke(
