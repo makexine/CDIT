@@ -15,8 +15,8 @@ from openai.error import APIError, Timeout, APIConnectionError
 import scipy.stats as stats
 from modelscope import AutoTokenizer, AutoModel, snapshot_download
 
-openai.api_base = "https://d1.xiamoai.top/v1"
-openai.api_key = "sk-1Pgi0tnBIN1cX1Ho167c8301C8Ae431fB338D9F4AfE6C22f"
+openai.api_base = " "
+openai.api_key = " "
 
 @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
 def completions_with_backoff(**kwargs):
@@ -100,7 +100,7 @@ def get_llm_gpt(evi,query):
 def get_llm_chatglm(evi,query): #思维链表达VMD
     # your api key
     #print("llm!")
-    zhipuai.api_key = "36d848bfbccdd993f40352f4e48bf43c.VRyq7foZfDFDE29t"
+    zhipuai.api_key = " "
     ins_0='You are a cautious language assistant.'
     ins_1='Here are some language rules:\n If the two sentences can be identified as similar, then the subjects, verbs and objects of two sentences are similar. Be especially mindful of verb phrases that appear similar but actually have opposite meanings which make sentences dissimilar. '
     #ins_2= 'Determine whether the meaning of sentences can be identified as similar according to the language rules. The answer can only be True or False.  Only output one word.'
@@ -118,7 +118,7 @@ def get_llm_chatglm(evi,query): #思维链表达VMD
 
 def get_llm_chatglm_0(evi,query):
     # your api key
-    zhipuai.api_key = "36d848bfbccdd993f40352f4e48bf43c.VRyq7foZfDFDE29t"
+    zhipuai.api_key = " "
     ins='Are the following statements relevant with the question? Just Say True if they are; otherwise just say False. Only output one word.'
     #ins="Are the following sentences similar to the question? For each sentence, if similar, just say true; Otherwise, say false. only output one word. Add the answer to the list and finally just output the list. Here are some examples. \n"
     #examples=" ###Input: \n question: come in \n sentences: ['[1]come out', '[2]come in'] \n ###Response:['False','True'] \n\n\n"
